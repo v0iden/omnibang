@@ -2,14 +2,23 @@
 	"name": "Omnibang",
 	"version": "0.3",
 	"description": "The fastest !bang extension for chrome.",
-	"author":"Vemund Wannag",
-	
-	"background":{
-		"scripts":["bg.js"]
+	"author": "Vemund Wannag",
+	"background": {
+		"scripts": [
+			"bg.js"
+		]
 	},
-	
-	"icons":{ "256": "icon.png"},
-	"omnibox":{"keyword":"!"},
-	"permissions":["tabs"],
-	"manifest_version": 2
+	"icons": {
+		"256": "icon.png"
+	},
+	"omnibox": {
+		"keyword": "!"
+	},
+	"permissions": [
+		"tabs"
+	],
+	"manifest_version": 2,
+	"web_accessible_resources": [
+		"bangs.json"
+	]
 }
