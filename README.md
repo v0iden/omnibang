@@ -1,90 +1,40 @@
-#!bang v0.2 
+# Omnibang
 
-!bang is a fast and geeky search engine selector.
-	
-	
-##activation	
-since chrome extentions only allows one keyword, the activation keyword is:
+Omnibang is probably the fastest chromium extension for [DuckDuckGo bangs](https://duckduckgo.com/bang). It doesn't rely on redirects, but instead sends you directly to your desired website. 
 
-	# (followed by SPACE or TAB)
+![Demonstration](readme/demonstration.gif)
 
-##command table	
+It is based on [elboza's "bang-chrome-extension"](https://github.com/elboza/bang-chrome-extension). Without him, this extension wouldn't be possible. 
 
-| command | query                                         |
-|---------|-----------------------------------------------|
-| !g      | www.google.com                                |
-| !a      | www.amazon.com                                |
-| !ait    | www.amazon.it                                 |
-| !afr    | www.amazon.fr                                 |
-| !aes    | www.amazon.es                                 |
-| !auk    | www.amazon.co.uk                              |
-| !b      | www.bing.com                                  |
-| !bi     | bing images                                   |
-| !bit    | www.bing.com with IT lang                     |
-| !bfr    | www.bing.com with FR lang                     |
-| !bes    | www.bing.com with ES lang                     |
-| !bl     | www.bing.com with browser's local lang setting|
-| !gi     | google images                                 |
-| !gm     | google maps search                            |
-| !gl     | google with browser's local lang setting      |
-| !git    | google with IT lang                           |
-| !gfr    | google with FR lang                           |
-| !ges    | google with ES lang                           |
-| !yt     | www.youtube.com                               |
-| !f      | www.facebook.com                              |
-| !t      | www.twitter.com                               |
-| !ebay   | www.ebay.com                                  |
-| !w      | en.wikipedia.org                              |
-| !wit    | it.wikipedia.org                              |
-| !wfr    | fr.wikipedia.org                              |
-| !wes    | es.wikipedia.org                              |
-| !dd     | www.duckduckgo.com                            |
-| !i      | google images                                 |
-| !y      | yahoo.com                                     |
-| !yi     | yahoo images                                  |
-| !yit    | yahoo with IT lang                            |
-| !yfr    | yahoo with FR lang                            |
-| !yes    | yahoo with ES lang                            |
-| !so     | stack overflow                                |
+## Usage
+```
+! yt wintergatan
+```
+> NOTE: Make sure to put a space or press tab after the exclamation mark!
 
-##command syntax logic
+## Benefits
+I previously used a bang chrome extension that was really slow. Here's how it worked:
 
-| prefix | description          |
-|--------|----------------------|
-| !      | the search command   |
+1) I typed in a `!bang` in the search bar. 
+2) I would then be sent to `google.com/search?q=!bang`
+3) The extension would analyze the url and determine if I had typed in a bang. 
+4) If I had, it would then redirect me to `duckduckgo.com/?q=!bang`
+5) Finally, DuckDuckGo itself would redirect me to my desired website. 
 
-| root   | description          |
-|--------|----------------------|
-| g      | query www.google.com |
-| a      | query www.amazon.com |
-| ...    | ...                  |
+As you can imagine, this took a lot of time. In comparison, here's how my extension works:
 
-| suffix | description                  |
-|--------|------------------------------|
-| it     | italian language             |
-| fr     | french language              |
-| l      | browser's local lang setting |
-| i      | images                       |
-| ...    | ...                          |
+1) You type in a `! bang` in the search bar. (With a space in between!)
+2) The extension looks at the bang and compares it to a **local** database of bangs. 
+3) If there's a match, you'll get sent directly to your desired website. 
+4) If the abbreviation isn't found, you will instead get a normal google search. 
 
+## Bugs
+This extension is really botched together, so there might be bugs. Please let me know if you find any. 
 
-##examples
+## Author
 
-	# !g foor bar(search "foo bar" in google)
+- [Original extension](https://github.com/elboza/bang-chrome-extension) by Fernando Iazeolla. Copyright 2014. 
+- Edited and updated by v0iden. Copyright 2021.
 
-	# !wit foor bar(search "foo bar" in italian wikipedia)
-	
-##links
-
-[!bang web site](http://www.autistici.org/0xFE/!bang/) 
-
-[get chrome extension](https://chrome.google.com/webstore/detail/bang/igohlmcnpgimdnkkagjjigihnmgeemkj)
-    
-##author
-
-Fernando Iazeolla (c)
-
-2014
-
-##licence
-This software is distrubuted under GPLv2 licence.
+## License
+This software is distrubuted under the GPLv2 license.
