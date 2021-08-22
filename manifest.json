@@ -1,18 +1,15 @@
 {
-	"name": "!bang",
-	"version": "0.2",
-	"description": "!bang extention. a quick and geeky search engine.",
-	"author":"Fernando Iazeolla",
-	"browser_action": {
-		"default_icon": "icon.png",
-		"default_title": "!bang",
-		"default_popup": "pp.html"
-	},
+	"name": "Omnibang",
+	"version": "0.3",
+	"description": "The fastest !bang extension for chrome.",
+	"author":"Vemund Wannag",
+	
 	"background":{
 		"scripts":["bg.js"]
 	},
+	
 	"icons":{ "256": "icon.png"},
-	"omnibox":{"keyword":"#"},
+	"omnibox":{"keyword":"!"},
 	"permissions":["tabs"],
 	"manifest_version": 2
 }
