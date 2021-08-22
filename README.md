@@ -24,7 +24,7 @@ I previously used a bang chrome extension that was really slow. Here's how it wo
 
 As you can imagine, this took a lot of time. In comparison, here's how my extension works:
 
-1) You type in a `! bang` in the search bar. (With a space in between!)
+1) You type in a `! bang` in the search bar.
 2) The extension looks at the bang and compares it to a **local** database of bangs. 
 3) If there's a match, you'll get sent directly to your desired website. 
 4) If the abbreviation isn't found, you will instead get a normal google search. 
