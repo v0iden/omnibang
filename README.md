@@ -30,7 +30,7 @@ As you can imagine, this took a lot of time. In comparison, here's how my extens
 4) If the abbreviation isn't found, you will instead get a normal google search. 
 
 ## Bugs
-This extension is really botched together, so there might be bugs. Please let me know if you find any. 
+This extension is really [bodged](https://youtu.be/lIFE7h3m40U) together, so there might be bugs. Please let me know if you find any. 
 
 ## Author
 
@@ -38,4 +38,4 @@ This extension is really botched together, so there might be bugs. Please let me
 - Edited and updated by v0iden. Copyright 2021.
 
 ## License
-This software is distrubuted under the GPLv2 license.
+This software is distrubuted under the [GPLv2](license.md) license.
