@@ -87,4 +87,4 @@ Fernando Iazeolla (c)
 2014
 
 ##licence
-This software is distrubuted under GPLv2 licence.
+This software is distrubuted under the (GPLv2 licence)[license.md].
