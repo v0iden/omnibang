@@ -7,8 +7,11 @@ Omnibang is probably the fastest chromium extension for [DuckDuckGo bangs](https
 It is based on [elboza's "bang-chrome-extension"](https://github.com/elboza/bang-chrome-extension). Without him, this extension wouldn't be possible. 
 
 ## Usage
+```
 ! {abbreviation} {search term}
+```
 > NOTE: Make sure to put a space or press tab after the exclamation mark!
+
 For example:
 ```
 ! yt wintergatan
