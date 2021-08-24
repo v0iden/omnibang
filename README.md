@@ -17,7 +17,7 @@ For example:
 ! yt wintergatan
 ```
 
-A full list of websites and their abbreviation can be found [here](banglist.md). Please note that this file is really long (about 13k websites), so it might take a while to load.
+A full list of websites and their abbreviation can be found [here](banglist.md). Please note that this file is really long (about 13k websites). Search using Ctrl + F.
 
 ## Installation (Works for both Chrome & Edge)
 I'm planning on publishing the extension to the chrome web store. As of now, though, you'll have to install the extension manually. 
