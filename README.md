@@ -1,6 +1,6 @@
 # Omnibang
 
-Omnibang is probably the fastest chromium extension for [DuckDuckGo bangs](https://duckduckgo.com/bang). It doesn't rely on redirects, but instead sends you directly to your desired website. 
+Omnibang is probably the fastest chromium extension for [DuckDuckGo bangs](https://duckduckgo.com/bang). It doesn't rely on redirects, but instead sends you directly to your desired website. All processing is handled client side. 
 
 ![Demonstration](readme/demonstration.gif)
 
