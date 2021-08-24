@@ -17,7 +17,7 @@ For example:
 ! yt wintergatan
 ```
 
-## Installation
+## Installation (Works for both Chrome & Edge)
 I'm planning on publishing the extension on the chrome web store. As of now, though, you'll have to install the extension manually. 
 1) [Download](https://github.com/v0iden/omnibang/archive/refs/heads/master.zip) zip file from Github. Extract to a location where it won't be deleted.
 2) Open the Extension Management page by navigating to `chrome://extensions`.
