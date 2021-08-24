@@ -1,7 +1,7 @@
 {
 	"name": "Omnibang",
 	"version": "0.3",
-	"description": "The fastest !bang extension for chrome.",
+	"description": "Probably the fastest !bang extension for chrome.",
 	"author": "Vemund Wannag",
 	"background": {
 		"scripts": [
