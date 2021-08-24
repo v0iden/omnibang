@@ -20,7 +20,7 @@ For example:
 A full list of websites and their abbreviation can be found [here](banglist.md). Please note that this file is really long (about 13k websites), so it might take a while to load.
 
 ## Installation (Works for both Chrome & Edge)
-I'm planning on publishing the extension on the chrome web store. As of now, though, you'll have to install the extension manually. 
+I'm planning on publishing the extension to the chrome web store. As of now, though, you'll have to install the extension manually. 
 1) [Download](https://github.com/v0iden/omnibang/archive/refs/heads/master.zip) zip file from Github. Extract to a location where it won't be deleted.
 2) Open the Extension Management page by navigating to `chrome://extensions`.
 3) Enable Developer Mode by clicking the toggle switch (upper right corner for Chrome, lower left corner for Edge).
