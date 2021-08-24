@@ -43,17 +43,13 @@ fetch(bangs_json_path)
 chrome.omnibox.onInputEntered.addListener(
   function (text) {
 
-    var res = text.split(" ");
-    // console.log(res)
-    var searchengine = ("!" + res.shift());
+    var results = text.split(" "); // ["yt", "wintergatan"]
+    console.log(results) 
+    var bang = ("!" + results.shift()); // first element of array
     // console.log(searchengine)
-    if (searchengine.charAt(0) != searchsigil) { res.unshift(searchengine); searchengine = "null"; }
-    var stringquery = res.join("%20");
-    //alert(searchengine+' '+stringquery);
-    //console.log('search engine: ' + searchengine+ ' string query: '+stringquery);
-    //alert('search engine: ' + searchengine+ ' string query: '+stringquery+take_searchengine(searchengine));
-    //alert(make_queryURL(take_searchengine(searchengine),stringquery));
-    var queryURL = make_queryURL(take_searchengine(searchengine), stringquery);
+    if (bang.charAt(0) != searchsigil) { results.unshift(bang); bang = "null"; }
+    var stringquery = results.join("%20");
+    var queryURL = make_queryURL(take_searchengine(bang), stringquery);
     //alert(queryURL);
     navigate(queryURL);
   });
