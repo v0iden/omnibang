@@ -2,6 +2,15 @@
 // author: Fernando Iazeolla
 // license: GPLv2
 
+function escapeString(string) {
+  return string
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+};
+
 
 // This event is fired each time the user updates the text in the omnibox,
 // as long as the extension's keyword mode is still active.
@@ -11,18 +20,18 @@ chrome.omnibox.onInputChanged.addListener(
     var results = text.split(" "); // ["yt", "wintergatan"]
     var bang = (results.shift()); // first element of array
     var stringquery = results.join("%20");
-    var queryURL = make_queryURL(take_searchengine(bang), stringquery);
-    suggest([{ content: ">" + queryURL, description: queryURL }]);
+    var queryURL = escapeString(make_queryURL(take_searchengine(bang), stringquery));
+    suggest([{ content: ">" + (queryURL), description: (queryURL) }]);
 
   }
 );
 
 // configuration ...
 var defaultengine = 'g';
-var linkstart = ">"
+var linkstart = ">";
 
 // Load bangs from json
-const bangs_json_path = chrome.runtime.getURL('bangs.json')
+const bangs_json_path = chrome.runtime.getURL('bangs.json');
 fetch(bangs_json_path)
   .then(response => response.json())
   .then(data => { banglist = data });
